@@ -1,19 +1,81 @@
-:root {
-    --grid-cols: 1;
-    --grid-rows: 1;
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@500&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    /* background: #FFF5D6; */
+    /* background: #FFF9E8; */
+    background: #FFE0FF;
+    /* background: #F9D2F9; */
+}
+
+.title {
+    position: absolute;
+    font-family: 'Roboto Slab', serif;
+    font-size: 60px;
+    font-weight: bold;
+    letter-spacing: 25px;
+    color: rgba(29, 2, 29);
+    top: 70px;
+    left: 679px;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+
 }
 
 #container {
-    display: grid;
-    width: 400px;
-    height: 400px;
-    grid-template-rows: repeat(var(--grid-rows), 1fr);
-    grid-template-columns: repeat(var(--grid-cols), 1fr);
-    border: 1px solid #000;
+    position: relative;
+    width: 500px;
+    height: 500px;
     background: #fff;
+    margin: 0 auto auto;
+    top: 200px;
+    box-shadow: 1px 1px 20px 5px rgba(119, 11, 119, 0.205);
+}
+
+.wrap {
+    display: flex;
+    justify-content: center;
+    gap: 0;
+}
+
+.buttons {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    top: 275px;
+    left: 500px;
+    gap: 30px;
+}
+
+.btn {
+    width: 150px;
+    height: 45px;
+    border-radius: 7px;
+    font-family: 'Roboto Slab', serif;
+    font-size: 20px;
+    cursor: pointer;
+    color: rgba(29, 2, 29);
+    letter-spacing: 0.5px;
+    background: #FFC1FF;
+    box-shadow: 4px 6px 10px 0px rgba(29, 2, 29, 0.4);
+    border: none;
+} 
+
+.btn:hover {
+    /* background: rgba(29, 2, 29);
+    color: #FFC1FF; */
+    border-top: 0.2px solid #fff;
+    border-left: 0.2px solid #fff;
+    border-right: 0.2px solid rgba(29, 2, 29, 0.4);
+    border-bottom: 0.2px solid rgba(29, 2, 29, 0.4);
+    text-shadow: 0.5px 0.5px 1.7px rgba(29, 2, 29, 0.4);
 }
 
 .square {
-    border: 1px solid red;
+    /* border: 1px solid red; */
 }
 
