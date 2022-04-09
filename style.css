@@ -10,42 +10,41 @@ body {
     background: #FFE0FF;
 }
 
+.main {
+    display: grid;
+    grid-template-rows: 1fr 5fr;
+    justify-content: center;
+    align-content: center;
+    gap: 25px;
+}
+
+.wrap {
+    display: grid;
+    grid-template-rows: 1fr 4fr;
+    align-content: center;
+    justify-content: center;
+}
+
 .title {
-    position: absolute;
+    position: relative;
     font-family: 'Roboto Slab', serif;
     font-size: 60px;
     font-weight: bold;
-    letter-spacing: 25px;
+    letter-spacing: 20px;
     color: rgba(29, 2, 29);
-    top: 70px;
-    left: 679px;
+    text-align: center;
+    margin-top: 30px;
     text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
 
 }
 
 #container {
-    position: relative;
     width: 500px;
     height: 500px;
     background: #fff;
     margin: 0 auto auto;
     top: 200px;
     box-shadow: 1px 1px 20px 5px rgba(119, 11, 119, 0.205);
-}
-
-.wrap {
-    display: flex;
-    justify-content: center;
-    gap: 0;
-}
-
-.buttons {
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    top: 275px;
-    left: 500px;
-    gap: 30px;
 }
 
 .btn {
@@ -60,6 +59,7 @@ body {
     background: #FFC1FF;
     box-shadow: 4px 6px 10px 0px rgba(29, 2, 29, 0.4);
     border: none;
+    margin: 0px 20px 20px 0;
 } 
 
 .active {
